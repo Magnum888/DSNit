@@ -7,11 +7,8 @@ import 'slick-carousel';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 $('.slider').slick({
-    // infinite: false,
     speed: 300,
-    // respondTo: 'content',
     mobileFirst: true,
-    // variableWidth: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
@@ -38,8 +35,5 @@ $('.slider').slick({
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
