@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container-fluid">
+      <div class="head">
+        <div class="d-flex flex-row align-items-center">
+          <div class="col-auto head__logo ml-auto">
+            <h2 class="head__logo__text">site logo</h2>
+            <h2 class="head__logo__text__mobile">sl</h2>
+          </div>
+          <div class="col-8 head__search_block">
+            <form action="#" class="align-items-center search">
+              <span class="search__point"></span>
+              <span class="search__select btn"></span>
+              <input type="text" class="search__input">
+              <input type="submit" value="" class="search__submit btn">
+            </form>
+          </div>
+          <div class="head__avatar_block col-auto ml-auto">
+            <div class="avatar row align-items-center">
+              <div class="avatar__bell btn"></div>
+              <div class="avatar__number">4</div>
+              <img src=<%= require("./images/avatar.png") %> alt="avatar" class="avatar__img rounded-circle">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__shadow"></div>
+    </div>
+  </header>
+
+  <div class="container main-cont">
+    <div class="content">
+        <div class="row justify-content-center">
+          <!-- Block info -->
+          <div class="col-12 col-md-auto order-2 order-md-1 info">
+            <div class="row">
+              <span class="info__leaf col-auto"></span>
+              <h1 class="info__title col-12 col-md-auto">Английский для детей</h1>
+            </div>
+            <h2 class="info__undertitle">Лучше раньше, чем никогда</h2>
+            <div class="card block">
+              <div class="card-header block__title" id="card-1">
+                  <div class="row align-items-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="block__img-title"></div>
+                    <p class="block__text-title">В каком возрасте начать обучение?</p>
+                    <button class="block__button-title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></button>
+                  </div>
+              </div>
+              <div id="collapseOne" class="block__body collapse show" aria-labelledby="card-1">
+                <div class="card-body">
+                  До пяти лет дети обладают лингвистической гениальностью. Они способны запоминать 20-30 новых слов в день. Простая арифметика дает впечатляющий результат – 7-10 тысяч слов в год. Да мы и в родном русском столько не используем, а что говорить об иностранном. Способности к языкам, безусловно, либо есть, либо нет. 
+                </div>
+              </div>
+            </div>
+
+            <div class="card block">
+              <div class="card-header block__title" id="card-2">
+                  <div class="row align-items-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="block__img-title"></div>
+                    <p class="block__text-title">В каком возрасте начать обучение?</p>
+                    <button class="block__button-title" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"></button>
+                  </div>
+              </div>
+              <div id="collapseTwo" class="block__body collapse" aria-labelledby="card-2">
+                <div class="card-body">
+                  До пяти лет дети обладают лингвистической гениальностью. Они способны запоминать 20-30 новых слов в день. Простая арифметика дает впечатляющий результат – 7-10 тысяч слов в год. Да мы и в родном русском столько не используем, а что говорить об иностранном. Способности к языкам, безусловно, либо есть, либо нет. 
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End block info -->
+          <!-- Block course -->
+          <div class="col-12 col-md-auto order-1 order-md-2 course">
+
+            <div class="course__head">
+              <h2 class="course__head__title">Курсы</h2>
+              <h2 class="course__head__undertitle">Английский язык</h2>
+            </div>
+
+            <div class="course__main">
+              <div class="course__main__body">
+                <div class="course__main__body__title row">
+                  <div class="img-head-course">
+                    <div class="img-head-course-logo"></div>
+                  </div>
+                  <div class="star-head-course"></div>
+                </div>
+                <div class="course__main__body__photo"></div>
+                <div class="course__main__body__school row">
+                  <div class="check-school"></div>
+                  <h2 class="name-chool">Школа <br> «Let's Speak»</h2>
+                </div>
+                <p class="course__main__body__text">Репетиторы носители языка главное наше преимущес...</p>
+                <hr>
+                <div class="course__main__body__location row">
+                  <div class="location-point"></div>
+                  <div class="location-name">
+                    <div class="location-country">Украина</div>
+                    <div class="location-town">Киев</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <!-- End block course -->
+        </div>
+
+        <h2 class="all-title-course">Курсы английского в Киеве</h2>
+
+        <!-- Block slider -->
+        <div class="justify-content-center cust-slider">
+          <div class="slider">
+
+            <!-- Part of slider -->
+            <div class="block-slider">
+              <div class="slide course__main">
+                <div class="course__main__body">
+                  <div class="course__main__body__title row">
+                    <div class="img-head-course">
+                      <div class="img-head-course-logo"></div>
+                    </div>
+                    <div class="star-head-course"></div>
+                  </div>
+                  <div class="course__main__body__photo d-flex">
+                    <div class="prise-head-course align-self-end ml-auto"><span class="price-value d-flex justify-content-center">от 55 грн</span></div>
+                  </div>
+                  <div class="course__main__body__school row">
+                    <div class="check-school"></div>
+                    <h2 class="name-chool">Школа
+                      <br> «Let's Speak»</h2>
+                  </div>
+                  <p class="course__main__body__text">Репетиторы носители языка главное наше преимущес...</p>
+                  <p class="course__main__body__text2">Курсы английского в Киеве</p>
+                  <hr class="hr-slider">
+                  <div class="course__main__body__location row">
+                    <div class="location-point"></div>
+                    <div class="location-name">
+                      <div class="location-country">Украина</div>
+                      <div class="location-town">Киев</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="block-slider">
+              <div class="slide course__main">
+                <div class="course__main__body">
+                  <div class="course__main__body__title row">
+                    <div class="img-head-course">
+                      <div class="img-head-course-logo"></div>
+                    </div>
+                    <div class="star-head-course"></div>
+                  </div>
+                  <div class="course__main__body__photo d-flex">
+                    <div class="prise-head-course align-self-end ml-auto"><span class="price-value d-flex justify-content-center">от 55 грн</span></div>
+                  </div>
+                  <div class="course__main__body__school row">
+                    <div class="check-school"></div>
+                    <h2 class="name-chool">Школа
+                      <br> «Let's Speak»</h2>
+                  </div>
+                  <p class="course__main__body__text">Репетиторы носители языка главное наше преимущес...</p>
+                  <p class="course__main__body__text2">Курсы английского в Киеве</p>
+                  <hr class="hr-slider">
+                  <div class="course__main__body__location row">
+                    <div class="location-point"></div>
+                    <div class="location-name">
+                      <div class="location-country">Украина</div>
+                      <div class="location-town">Киев</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="block-slider">
+              <div class="slide course__main">
+                <div class="course__main__body">
+                  <div class="course__main__body__title row">
+                    <div class="img-head-course">
+                      <div class="img-head-course-logo"></div>
+                    </div>
+                    <div class="star-head-course"></div>
+                  </div>
+                  <div class="course__main__body__photo d-flex">
+                    <div class="prise-head-course align-self-end ml-auto"><span class="price-value d-flex justify-content-center">от 55 грн</span></div>
+                  </div>
+                  <div class="course__main__body__school row">
+                    <div class="check-school"></div>
+                    <h2 class="name-chool">Школа
+                      <br> «Let's Speak»</h2>
+                  </div>
+                  <p class="course__main__body__text">Репетиторы носители языка главное наше преимущес...</p>
+                  <p class="course__main__body__text2">Курсы английского в Киеве</p>
+                  <hr class="hr-slider">
+                  <div class="course__main__body__location row">
+                    <div class="location-point"></div>
+                    <div class="location-name">
+                      <div class="location-country">Украина</div>
+                      <div class="location-town">Киев</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="block-slider">
+              <div class="slide course__main">
+                <div class="course__main__body">
+                  <div class="course__main__body__title row">
+                    <div class="img-head-course">
+                      <div class="img-head-course-logo"></div>
+                    </div>
+                    <div class="star-head-course"></div>
+                  </div>
+                  <div class="course__main__body__photo d-flex">
+                    <div class="prise-head-course align-self-end ml-auto"><span class="price-value d-flex justify-content-center">от 55 грн</span></div>
+                  </div>
+                  <div class="course__main__body__school row">
+                    <div class="check-school"></div>
+                    <h2 class="name-chool">Школа
+                      <br> «Let's Speak»</h2>
+                  </div>
+                  <p class="course__main__body__text">Репетиторы носители языка главное наше преимущес...</p>
+                  <p class="course__main__body__text2">Курсы английского в Киеве</p>
+                  <hr class="hr-slider">
+                  <div class="course__main__body__location row">
+                    <div class="location-point"></div>
+                    <div class="location-name">
+                      <div class="location-country">Украина</div>
+                      <div class="location-town">Киев</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="block-slider">
+              <div class="slide course__main">
+                <div class="course__main__body">
+                  <div class="course__main__body__title row">
+                    <div class="img-head-course">
+                      <div class="img-head-course-logo"></div>
+                    </div>
+                    <div class="star-head-course"></div>
+                  </div>
+                  <div class="course__main__body__photo d-flex">
+                    <div class="prise-head-course align-self-end ml-auto"><span class="price-value d-flex justify-content-center">от 55 грн</span></div>
+                  </div>
+                  <div class="course__main__body__school row">
+                    <div class="check-school"></div>
+                    <h2 class="name-chool">Школа
+                      <br> «Let's Speak»</h2>
+                  </div>
+                  <p class="course__main__body__text">Репетиторы носители языка главное наше преимущес...</p>
+                  <p class="course__main__body__text2">Курсы английского в Киеве</p>
+                  <hr class="hr-slider">
+                  <div class="course__main__body__location row">
+                    <div class="location-point"></div>
+                    <div class="location-name">
+                      <div class="location-country">Украина</div>
+                      <div class="location-town">Киев</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End part of slider -->
+          </div>
+        </div>
+        <!-- End Block slider -->
+    </div>
+  </div>
+
+</body>
+</html>
